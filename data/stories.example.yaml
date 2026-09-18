@@ -1,0 +1,46 @@
+# STAR-format stories for behavioral interview answers.
+# Each story is one Situation/Task/Action/Result narrative for one accomplishment.
+#
+# tags: free-text behavioral competency keywords (e.g. leadership, ownership,
+# debugging, conflict-resolution) - NOT the same controlled vocabulary as
+# data/skill_vocabulary.yaml, since there's no posting-side list to match against yet.
+#
+# related_bullets: optional list of resume.yaml bullet `id`s this story backs up,
+# so the numbers/details you tell in an interview match what's on your resume.
+
+stories:
+  - id: acme-latency-fix
+    title: "Cut order-processing latency under a tight deadline"
+    situation: >
+      Our order-processing pipeline was hitting P95 latency of 2.5s during peak
+      traffic, causing checkout timeouts and a rising support ticket volume.
+    task: >
+      I was asked to bring P95 latency under 1.5s within two weeks, before the
+      next high-traffic sales event.
+    action: >
+      I profiled the pipeline, found a synchronous third-party API call blocking
+      the critical path, and rewrote that section in Python to batch and
+      parallelize the calls instead of running them one at a time.
+    result: >
+      P95 latency dropped 40%, comfortably under the 1.5s target, and the fix
+      shipped three days ahead of the sales event with no incidents.
+    tags: [ownership, debugging, performance, deadline-pressure]
+    related_bullets: [acme-1]
+
+  - id: startup-cross-team-dashboard
+    title: "Built a reporting dashboard three teams actually adopted"
+    situation: >
+      Three different teams were each maintaining their own manual spreadsheet
+      for the same underlying sales data, and the numbers frequently disagreed.
+    task: >
+      As the newest engineer, I proposed and was given informal ownership of
+      replacing all three spreadsheets with one shared source of truth.
+    action: >
+      I interviewed each team about what they actually needed to see, built a
+      single dashboard against the production database, and ran a two-week
+      pilot with one team before rolling out to the other two.
+    result: >
+      All three teams switched over within a month, and the "whose numbers are
+      right" arguments in weekly meetings stopped.
+    tags: [cross-functional, ownership, stakeholder-communication]
+    related_bullets: [startup-1]

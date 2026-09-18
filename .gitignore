@@ -1,6 +1,7 @@
 # --- Secrets / environment ---
 .env
 .env.*
+!.env.example
 *.key
 config/secrets.yaml
 
@@ -32,4 +33,5 @@ drafts/
 !data/resume.example.yaml
 !data/stories.example.yaml
 !data/skills.example.yaml
+!data/voice_samples.example.md
 !data/tracker.example.csv

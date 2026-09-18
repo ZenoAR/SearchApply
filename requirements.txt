@@ -1,1 +1,3 @@
-pyyaml
+pyyaml==6.0.3
+anthropic==0.125.0
+python-dotenv==1.2.1
