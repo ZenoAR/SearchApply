@@ -1,0 +1,59 @@
+# Reference vocabulary used by `analyze` to DETECT skill mentions in posting text.
+# Not personal data - this is just a keyword list, safe to commit and share.
+# Expand it whenever a posting mentions a skill this list doesn't catch yet.
+#
+# `name` should match the `name` you use in data/skills.yaml exactly (that's the
+# join key between "what a posting asks for" and "what you honestly rate yourself").
+# `aliases` are alternate spellings/abbreviations that should also count as a match.
+
+skills:
+  - name: python
+    aliases: []
+  - name: javascript
+    aliases: [js, ecmascript]
+  - name: typescript
+    aliases: [ts]
+  - name: java
+    aliases: []
+  - name: sql
+    aliases: [postgresql, postgres, mysql]
+  - name: react
+    aliases: [react.js, reactjs]
+  - name: node
+    aliases: [node.js, nodejs]
+  - name: aws
+    aliases: [amazon web services]
+  - name: gcp
+    aliases: [google cloud]
+  - name: azure
+    aliases: []
+  - name: docker
+    aliases: []
+  - name: kubernetes
+    aliases: [k8s]
+  - name: ci-cd
+    aliases: [ci/cd, continuous integration, continuous deployment]
+  - name: git
+    aliases: []
+  - name: rest-api
+    aliases: [rest api, restful api]
+  - name: graphql
+    aliases: []
+  - name: microservices
+    aliases: []
+  - name: system-design
+    aliases: [system design]
+  - name: data-structures
+    aliases: [data structures]
+  - name: algorithms
+    aliases: []
+  - name: testing
+    aliases: [unit testing, unit tests, test-driven development, tdd]
+  - name: linux
+    aliases: []
+  - name: agile
+    aliases: [scrum]
+  - name: mongodb
+    aliases: [mongo]
+  - name: redis
+    aliases: []

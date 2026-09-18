@@ -1,0 +1,59 @@
+# Source of truth for your experience AS YOU'D STATE IT PUBLICLY.
+# Different from data/skills.yaml, which is your honest private self-rating -
+# resume.yaml is what actually goes on paper.
+#
+# Every bullet has an `id` (stable reference, e.g. for stories.yaml to point back
+# to it later) and `tags` (skill names - use the SAME names as data/skill_vocabulary.yaml,
+# so the `draft` step can match posting requirements to relevant bullets mechanically).
+
+contact:
+  name: "Jane Doe"
+  email: "jane@example.com"
+  phone: "555-123-4567"
+  location: "Remote"
+  links:
+    - label: "LinkedIn"
+      url: "https://linkedin.com/in/janedoe"
+    - label: "GitHub"
+      url: "https://github.com/janedoe"
+
+summary: >
+  Backend-leaning software engineer with 4 years building and scaling
+  data-heavy web services.
+
+skills:
+  - python
+  - sql
+  - aws
+  - docker
+
+experience:
+  - company: "Acme Corp"
+    title: "Software Engineer"
+    location: "Remote"
+    start_date: "2023-01"
+    end_date: null   # null = current job
+    bullets:
+      - id: acme-1
+        text: "Redesigned the order-processing pipeline in Python, cutting P95 latency 40%"
+        tags: [python, sql]
+      - id: acme-2
+        text: "Migrated batch jobs to containerized workers on AWS, reducing infra cost 25%"
+        tags: [aws, docker]
+
+  - company: "Startup Inc"
+    title: "Junior Developer"
+    location: "New York, NY"
+    start_date: "2021-06"
+    end_date: "2022-12"
+    bullets:
+      - id: startup-1
+        text: "Built internal reporting dashboard used by 3 teams, replacing manual spreadsheets"
+        tags: [python, sql]
+
+education:
+  - school: "State University"
+    degree: "B.S. Computer Science"
+    graduation_date: "2021-05"
+
+projects: []

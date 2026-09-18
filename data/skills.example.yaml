@@ -1,0 +1,36 @@
+# Honest self-assessment of your CURRENT skill level.
+# Separate from resume.yaml on purpose: resume.yaml is what you publicly claim,
+# skills.yaml is the truth, so gap analysis tells you what to actually practice.
+#
+# level: one of learning | comfortable | confident
+#   learning    - used it a little, or a while ago; would need to look things up
+#   comfortable - can do real work with it unassisted, some edge cases might trip you up
+#   confident   - could pass a live interview question on it without prep
+#
+# last_used: YYYY-MM, optional. Helps flag "confident but rusty" skills.
+# category: language | framework | tool | domain | soft-skill (free-form, used by `report` later)
+
+skills:
+  - name: python
+    level: comfortable
+    category: language
+    last_used: "2026-08"
+    notes: "Daily driver; async/concurrency is the weak spot"
+
+  - name: sql
+    level: confident
+    category: language
+    last_used: "2026-09"
+    notes: ""
+
+  - name: react
+    level: learning
+    category: framework
+    last_used: "2024-11"
+    notes: "Used it on one project two years ago, would need a refresher"
+
+  - name: system-design
+    level: learning
+    category: domain
+    last_used: ""
+    notes: "Never formally practiced, know the vocabulary from reading"
